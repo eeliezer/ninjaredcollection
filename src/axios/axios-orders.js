@@ -21,6 +21,7 @@ export const getOrders = async (dispatch, currentUser) => {
     dispatch(fetchOrdersSuccess(orders.data.data));
   } catch (error) {
     dispatch(fetchOrdersFailure('Failed to fetch orders'));
+    console.log(error);
   }
 };
 
@@ -36,5 +37,6 @@ export const createOrder = async (order, dispatch, currentUser) => {
     }
   } catch (error) {
     dispatch(createOrderFailure('Failed to create order'));
+    alert('No se pudo crear el pedido');
   }
 };

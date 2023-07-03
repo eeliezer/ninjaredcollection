@@ -26,6 +26,6 @@ export const loginUser = async (email, password) => {
     return response.data;
   } catch (error) {
     console.log(error);
-    alert('¡Usuario no registrado!');
+    alert('¡Usuario no registrado o contraseña invalida!');
   }
 };
