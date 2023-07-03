@@ -29,6 +29,7 @@ const Register = () => {
             dispatch(
               setCurrentUser({
                 ...user.usuario,
+                token: user.token,
               })
             );
           }

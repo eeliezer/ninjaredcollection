@@ -36,6 +36,7 @@ const Login = () => {
             dispatch(
               setCurrentUser({
                 ...user.usuario,
+                token: user.token,
               })
             );
           }
